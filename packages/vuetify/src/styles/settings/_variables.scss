@@ -266,3 +266,15 @@ $kbd-padding: .2rem .4rem !default;
 $kbd-background-color: #212529 !default;
 $input-top-spacing: 16px !default;
 $text-field-active-label-height: 12px !default;
+
+$sizes: () !default;
+$sizes: map-deep-merge(
+  (
+    'x-small': 0.5rem,
+    'small': 0.75rem,
+    'default': 1rem,
+    'large': 1.25rem,
+    'x-large': 1.5rem,
+  ),
+  $sizes
+);
