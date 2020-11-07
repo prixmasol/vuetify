@@ -20,7 +20,7 @@
         type="number"
         min="-1"
         max="15"
-        @input="itemsPerPage = parseInt($event, 10)"
+        @input="itemsPerPage = $event == '' ? 0 : parseInt($event, 10)"
       ></v-text-field>
     </div>
   </div>
